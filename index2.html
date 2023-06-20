@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>HTML5</title>
+    </head>
+    <body>
+        <video src="./test.mp4" controls="controls" width="700px" height="400px"></video>
+    </body>
+</html>
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>HTML5学习(9xkd.com)</title>
+    </head>
+    <body>
+        <audio controls="controls">
+            <source src="./test.mp4" type="audio/mpeg">
+            <source src="./test.ogg" type="audio/ogg">
+        </audio>
+    </body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+       .div1{
+        width: 200px;
+        height: 200px;
+        background-color:cadetblue;
+        border-radius: 30px;
+       }
+       .div2{
+        width: 200px;
+        height: 200px;
+        background-color:darkslateblue;
+        border-radius: 20px 40px 60px 80px;
+       }
+    </style>
+</head>
+<body>
+    <div class="div1">为四个角分别设置相同的length</div>
+    <div class="div2">为四个角分别设置不同的length</div>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+ 
+<head>
+    <style>
+        h1 {
+            font-size: 40px;
+            font-family: 'Courier New', Courier, monospace;
+            color: hotpink;
+            text-shadow: 4px 4px 4px rgba(0, 0, 0, .3);
+        }
+    </style>
+</head>
+ 
+<body>
+    <h1>我爱学习</h1>
+</body>
+ 
+</html>
+ 
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+div {
+  width: 300px;
+  height: 100px;
+  background-color: yellow;
+  border: 1px solid black;
+}
+ 
+div#myDiv {
+  -ms-transform: rotate(20deg);
+  transform: rotate(20deg);
+}
+</style>
+</head>
+<body>
+ 
+<h1>rotate() 方法</h1>
+<p>rotation() 方法顺时针或逆时针旋转元素。</p >
+ 
+<div>
+这是一个普通的 div 元素。
+</div>
+ 
+<div id="myDiv">
+这个 div 元素顺时针旋转 20 度。
+</div>
+ 
+</body>
+</html>
+ 
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+div {
+  width: 300px;
+  height: 100px;
+  background-color: yellow;
+  border: 1px solid black;
+}
+ 
+#myDiv {
+  transform: rotateZ(90deg);
+}
+</style>
+</head>
+<body>
+ 
+<h1>rotateZ() 方法</h1>
+<p>rotateZ() 方法将元素围绕其 Z 轴旋转给定程度。</p >
+ 
+<div>
+这是一个普通的 div 元素。
+</div>
+ 
+<div id="myDiv">
+该 div 元素旋转了 90 度。
+</div>
+ 
+</body>
+</html>
+ 
+
+<style>
+    .box {
+      width: 50px;
+      height: 50px;
+      background-color: pink;
+      transition-property: all;
+      transition-duration: 0.8s;
+    }
+    .box::after {
+      content: "★";
+      color: rgba(255, 255, 255, 0.8);
+      width: inherit;
+      height: inherit;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      transition-duration: 0.8s;
+    }
+    .box:hover {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      background-color: skyblue;
+    }
+    .box:hover::after {
+      content: "♥";
+      font-size: 100px;
+    }
+  </style>
+  <body>
+    <div class="box"></div>
+  </body>
+ 
